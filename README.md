@@ -51,11 +51,12 @@ $ make
 
 ### Key bindings
 
-| Key | Description |
-| --- | --- |
+| Key              | Description  |
+|------------------|--------------|
 | <kbd>SPACE</kbd> | Toggle pause |
-| <kbd>=</kbd> | Zoom in |
-| <kbd>-</kbd> | Zoom out |
-| <kbd>0</kbd> | Zoom 100% |
-| <kbd>F5</kbd> | Restart |
-| <kbd>F11</kbd> | Fullscreen |
+| <kbd>+</kbd>     | Zoom in      |
+| <kbd>-</kbd>     | Zoom out     |
+| <kbd>0</kbd>     | Zoom 100%    |
+| <kbd>r</kbd>     | Restart      |
+| <kbd>f</kbd>     | Fullscreen   |
+| <kbd>q</kbd>     | Quit         |

@@ -248,6 +248,11 @@ int main(int argc, char **argv)
 
             case SDL_KEYDOWN: {
                 switch (event.key.keysym.sym) {
+		case SDLK_q: {
+		  SDL_Quit();
+		  return 0;
+		} break;
+
                 case SDLK_SPACE: {
                     paused = !paused;
                     if (paused) {
@@ -258,7 +263,7 @@ int main(int argc, char **argv)
                 } break;
 
                 case SDLK_KP_PLUS:
-                case SDLK_EQUALS: {
+                case SDLK_PLUS: {
                     user_scale += SCALE_FACTOR * user_scale;
                 } break;
 
@@ -272,7 +277,7 @@ int main(int argc, char **argv)
                     user_scale = 1.0f;
                 } break;
 
-                case SDLK_F5: {
+                case SDLK_r: {
                     displayed_time = -1.0f;
                     paused = 0;
                     for (int i = 1; i < argc; ++i) {
@@ -289,7 +294,7 @@ int main(int argc, char **argv)
                     }
                 } break;
 
-                case SDLK_F11: {
+                case SDLK_f: {
                     Uint32 window_flags;
                     secc(window_flags = SDL_GetWindowFlags(window));
                     if(window_flags & SDL_WINDOW_FULLSCREEN_DESKTOP) {
